@@ -1,0 +1,69 @@
+GET http://jordi.dsmynas.com:3000/users
+
+###
+
+GET http://jordi.dsmynas.com:3000/users/6098565454d65634167a34d2
+
+###
+POST  http://192.168.1.167:3000/users
+Content-Type: application/json
+
+{
+    "name": "Jordi Franssen",
+    "email": "jordifranssenmij@gmail.com",
+    "userName": "username",
+    "password": "w"
+}
+
+###
+DELETE http://jordi.dsmynas.com:3000/users/6099c891b0bb682eb317e20a
+
+
+###
+
+PATCH  http://jordi.dsmynas.com:3000/users/6098595f9a4da6360187ac56
+Content-Type: application/json
+
+{
+    "name": "Trololo"
+}
+
+###
+
+POST  http://192.168.1.167:3000/rooms
+Content-Type: application/json
+
+{
+    "roomName": "roomname"
+}
+
+###
+
+GET http://jordi.dsmynas.com:3000/rooms/6098703d1a7da2431cfc773b
+
+###
+
+PATCH     http://192.168.1.167:3000/rooms/6098703d1a7da2431cfc773b
+Content-Type: application/json
+
+{
+    "messages": {
+        "message": "message",
+        "sentBy": "Jordi",
+        "sendTime": "test"
+    }
+}
+
+
+###
+
+PUT   http://192.168.1.167:3000/rooms/6098703d1a7da2431cfc773b
+Content-Type: application/json
+
+{
+    "messages": {
+        "message": "messsage",
+        "sentBy": "Jordi",
+        "sendTime": "test"
+    }
+}
