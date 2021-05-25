@@ -11,12 +11,11 @@ Content-Type: application/json
 {
     "name": "Jordi Franssen",
     "email": "jordifranssenmij@gmail.com",
-    "userName": "username",
     "password": "w"
 }
 
 ###
-DELETE http://jordi.dsmynas.com:3000/users/6099c891b0bb682eb317e20a
+DELETE http://jordi.dsmynas.com:3000/users/6099da94e496d938e77e27b9
 
 
 ###
