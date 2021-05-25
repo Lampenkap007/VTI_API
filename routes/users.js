@@ -71,6 +71,8 @@ router.delete('/:id', getUser, async (req, res) => {
     }
 })
 
+
+// Find one user
 async function getUser(req, res, next) {
     let user
     try {

@@ -53,6 +53,7 @@ router.patch('/:id', getRoom, async (req, res) => {
     }
 })
 
+// Add one message
 router.put('/:id', getRoom, async (req, res) => {
     if (req.body.messages != null) {
         res.room.messages.push(req.body.messages)
@@ -81,6 +82,8 @@ router.delete('/:id', getRoom, async (req, res) => {
     }
 })
 
+
+// Find one room
 async function getRoom(req, res, next) {
     let room
     try {
